@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "image": "src/assets/avatar.png",
+    "name": "Ivan",
+    "surname": "Mazepa",
+    "slogan": "Продажа голды в вов 24/7",
+    "registration_info" : "Месяц назад",
+    "registration_date": "25 ноября 2022, в 11:33"
+  }
+]
