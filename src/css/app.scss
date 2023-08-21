@@ -415,3 +415,371 @@ body{
     margin: 0;
   }
 }
+
+
+@media screen and (max-width: 1440px){
+  .reviews{
+    &__sort {
+      .q-select--without-input .q-field__control {
+        width: 340px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px){
+  .wrapper{
+    max-width: 1280px;
+    padding: 0 20px;
+  }
+
+  .background-left{
+    top: 391px;
+  }
+
+  .background-right{
+    top: 379px;
+    right: 0;
+  }
+
+  .header{
+
+    padding: 112px 0 34px 0;
+    h3{
+      font-size: 25px;
+      line-height: 35px;
+    }
+    &__rating,&__reviews,&__deals{
+      padding: 12px 20px;
+      border-radius: 15px;
+      height: 44px;
+      p{
+        font-size: 14px;
+      }
+      span{
+        font-size: 16px;
+      }
+      svg{
+        width: 13px;
+        height: 13px;
+      }
+    }
+    &__reviews{
+      padding: 12px 20px;
+      margin: 0 10px;
+      span{
+        font-size: 14px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+    &__deals{
+      padding: 12px 20px;
+      margin: 0;
+      p{
+        font-size: 14px;
+        span{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .navbar{
+    max-width: 234px;
+    padding: 20px;
+    &__user{
+      img{
+        width: 50px;
+        height: 50px;
+        padding: 12px 14px;
+        border-radius: 15px;
+      }
+      &-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+          color: #fff;
+          font-size: 14px;
+          line-height: 16px;
+        }
+        span{
+          padding: 0 0 0 10px;
+        }
+      }
+      &-slogan{
+        margin: 20px 0;
+        font-size: 12px;
+        line-height: 14.5px;
+      }
+      &-registration{
+        span{
+          font-size: 12px;
+        }
+        p{
+          font-size: 14px;
+          padding: 10px 0 0 0;
+        }
+      }
+    }
+    ul{
+      li{
+        padding: 15px;
+        p{
+          font-size: 14px;
+          line-height: 19.5px;
+        }
+      }
+    }
+  }
+
+  .q-page-container{
+    width: calc(100% - 254px);
+  }
+
+  .reviews{
+    h2{
+      padding: 20px 0 30px 0;
+      font-size: 18px;
+    }
+    &__info{
+      flex-wrap: wrap;
+      margin: 0 0 10px 0;
+    }
+    &__client{
+      width: 100%;
+      &-description{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        position: relative;
+      }
+      &-name,&-count,&-rating{
+        display: flex;
+        align-items: center;
+        height: fit-content;
+      }
+      &-name{
+        font-size: 16px;
+        line-height: 19px;
+      }
+      &-count{
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+      &-rating{
+        width: 100%;
+        height: 10px;
+        display: flex;
+        svg{
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+    &__sort{
+      margin: 30px 0 0 0;
+      width: 100%;
+      .q-select--without-input .q-field__control{
+        width: 100%;
+      }
+      .q-field__native span{
+        color: #fff;
+        font-size: 14px;
+      }
+      .q-field--float .q-field__label{
+        transform: translateY(-135%) scale(1);
+        font-size: 12px;
+      }
+    }
+    &__unit{
+      img{
+        margin: 0 15px 0 0;
+      }
+      &-header{
+        height: 20px;
+      }
+      &-name{
+        font-size: 16px;
+        line-height: 19px;
+      }
+      &-game{
+        font-size: 12px;
+        line-height: 14px;
+      }
+      &-month{
+        font-size: 12px;
+        line-height: 14px;
+      }
+      &-body{
+        margin: 15px 0 0 0;
+        p{
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+    .q-btn{
+      max-width: 257px;
+      margin: 15px auto 30px auto;
+      padding: 19px 30px;
+      border-radius: 20px;
+      .q-btn__content{
+        span{
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+    &__empty{
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1024px){
+  .wrapper{
+    max-width: 1024px;
+    padding: 0 10px;
+  }
+
+  .background-left{
+    top: 302px;
+  }
+
+  .background-right{
+    top: 387px;
+  }
+
+  .header{
+
+    padding: 100px 0 22px 0;
+    border-bottom: 1px solid #7D7781;
+    margin: 0 0 20px 0;
+    h3{
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__rating,&__reviews,&__deals{
+      padding: 9px 15px;
+      height: 35px;
+      p{
+        font-size: 12px;
+      }
+      span{
+        font-size: 14px;
+      }
+      svg{
+        width: 10px;
+        height: 10px;
+      }
+    }
+    &__reviews{
+      padding: 10px 15px;
+      span{
+        font-size: 12px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+    &__deals{
+      padding: 10px 15px;
+      p{
+        font-size: 12px;
+        span{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .navbar{
+    max-width: 190px;
+    padding: 15px;
+    &__user{
+      position: relative;
+      img{
+        width: 35px;
+        height: 35px;
+        padding: 9px;
+      }
+      &-description{
+        p{
+          color: #fff;
+          font-size: 14px;
+          line-height: 17px;
+          padding: 0;
+        }
+        span{
+          position: absolute;
+          left: 0;
+          top: 45px;
+        }
+      }
+      &-slogan{
+        margin: 35px 0 15px 0;
+      }
+      &-registration{
+        padding: 10px;
+        p{
+          font-size: 12px;
+          padding: 5px 0 0 0;
+        }
+      }
+    }
+    ul{
+      li{
+        padding: 15px 10px;
+        p{
+          font-size: 14px;
+          line-height: 19.5px;
+        }
+      }
+    }
+  }
+
+  .q-page-container{
+    width: calc(100% - 210px);
+  }
+
+  .reviews{
+    border: none;
+    h2{
+      padding: 0 0 20px 0;
+    }
+    &__info{
+      margin: 0;
+    }
+    &__sort{
+      .q-field--outlined .q-field__control:before{
+        border-radius: 17px;
+      }
+    }
+    .q-btn{
+      max-width: 237px;
+      margin: 15px auto 30px auto;
+      padding: 16px 20px;
+      .q-btn__content{
+        span{
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+    &__empty{
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+}
