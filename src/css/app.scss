@@ -4,6 +4,10 @@ body{
   background: #120C17;
 }
 
+#q-app{
+  position: relative;
+}
+
 .wrapper{
   display: flex;
   justify-content: space-between;
@@ -174,6 +178,9 @@ body{
         margin: 0;
         padding: 10px 0 0 0;
       }
+    }
+    svg{
+      display: none;
     }
   }
   ul{
@@ -353,6 +360,7 @@ body{
     }
     &-header{
       display: flex;
+      justify-content: space-between;
       height: 22px;
       align-items: center;
     }
@@ -390,6 +398,10 @@ body{
         font-size: 16px;
         line-height: 28px;
       }
+    }
+    &-left,&-right{
+      display: flex;
+      align-items: center;
     }
   }
   .q-btn{
@@ -779,6 +791,120 @@ body{
     &__empty{
       font-size: 14px;
       line-height: 17px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1024px){
+  .wrapper{
+    max-width: 767px;
+    padding: 0 25px;
+  }
+
+  .background-right,.background-left,.background-bottom{
+    left: 50%;
+    transform: translateX(-50%);
+    right: unset;
+  }
+  .background-left{
+    top: 125px;
+  }
+  .background-right{
+    top: 925px;
+  }
+  .background-bottom{
+    display: block;
+    bottom: 0;
+  }
+
+  .header{
+    padding: 145px 0 20px 0;
+    flex-wrap: wrap;
+    &__rating,&__reviews,&__deals{
+      border-radius: 10px;
+    }
+    &__rating{
+      margin: 0 0 0 calc(100% - 304px);
+    }
+    &__reviews{
+      margin: 15px 0 0 auto;
+    }
+    &__deals{
+      margin: 15px 0 0 10px;
+    }
+  }
+
+  .navbar{
+    max-width: unset;
+    width: 100%;
+    max-height: 90px;
+    overflow: hidden;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    transition: all 0.5s ease;
+    &__user{
+      align-items: center;
+      img{
+        width: 50px;
+        height: 50px;
+        padding: 12.7px;
+      }
+      &-description{
+        span{
+          position: relative;
+          top: unset;
+        }
+      }
+      &-slogan{
+        margin: 0 0 0 auto;
+      }
+      svg{
+        display: block;
+        margin: 0 0 0 38px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+      }
+      &-registration{
+        margin: 20px 0 0 0;
+      }
+    }
+    &.active{
+      max-height: 600px;
+      .arrow{
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .q-page-container{
+    width: 100%;
+  }
+
+  .reviews{
+    &__unit{
+      &-header{
+        flex-wrap: wrap;
+        height: unset;
+      }
+      &-left,&-right{
+        width: 100%;
+      }
+      &-right{
+        margin: 7px 0 0 0;
+      }
+      &-month{
+        margin: 0 20px 0 0;
+      }
+      &-body{
+        margin: 10px 0 0 0;
+      }
+    }
+    .q-btn{
+      max-width: unset;
+      width: 100%;
+      border-radius: 15px;
+      margin: 5px auto 30px auto;
     }
   }
 

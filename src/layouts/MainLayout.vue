@@ -12,7 +12,7 @@
     <img src="src/assets/background-right-xl.png" alt="MDN" />
   </picture>
   <picture class="background-bottom">
-    <source srcset="src/assets/background-bottom-mb.png" media="(max-width: 1280px)" />
+    <source srcset="src/assets/background-bottom-mb.png" media="(min-width: 767px)" />
     <img src="src/assets/background-bottom-mb.png" alt="MDN" />
   </picture>
   <q-layout class="wrapper" view="lHh Lpr lFf">
@@ -38,7 +38,7 @@
         <p>Покупок: <span>30</span></p>
       </div>
     </header>
-    <nav class="navbar">
+    <nav :class="[navbarIsActive === true ? 'active' : '']" class="navbar">
       <div class="navbar__user">
         <img :src="user.image" alt="avatar">
         <div class="navbar__user-description">
@@ -46,6 +46,9 @@
           <span>Онлайн</span>
         </div>
         <p class="navbar__user-slogan">Продажа голды в вов 24/7</p>
+        <svg class="arrow" @click="toggleNavbar" width="9" height="20" viewBox="0 0 9 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.94531 7.68359L9 8.73828L4.5 13.2383L0 8.73828L1.05469 7.68359L4.5 11.1289L7.94531 7.68359Z" fill="#7D7781"/>
+        </svg>
         <div class="navbar__user-registration">
           <span>Регистрация: {{ user.registration_info }}</span>
           <p>{{ user.registration_date }}</p>
@@ -114,6 +117,7 @@ export default defineComponent({
         rating: 0
       },
       reviews: [],
+      navbarIsActive: false
     }
 
   },
@@ -164,6 +168,10 @@ export default defineComponent({
       })
       this.user.rating = Math.floor(userRating / this.reviews.length)
     },
+
+    toggleNavbar(){
+      this.navbarIsActive === false ? this.navbarIsActive = true : this.navbarIsActive = false
+    }
 
   },
 
